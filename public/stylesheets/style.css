@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+ .head {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+}
+ body {
+   background: #111;
+}
+ .main-cont {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+ #card::before {
+   content: '';
+   position: absolute;
+   width: 200px;
+   height: 300px;
+   background: rgba(0, 0, 0, 0.3);
+   top: 0;
+   left: 0;
+   border-radius: 10px;
+}
+ #card {
+   position: relative;
+   width: 200px;
+   background: url('https://images2.alphacoders.com/615/615331.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 300px;
+   border-radius: 10px;
+   box-shadow: 0 6px 40px rgba(90, 102, 127, .3);
+   margin-right: 30px;
+   margin-bottom: 15px;
+}
+ #card .inner {
+   font-family: 'Lato', open-sans;
+}
+ #card .inner .header {
+   position: relative;
+   border-radius: 10px;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.6);
+}
+ #card .inner .header .fa-info-circle {
+   z-index: 999;
+   color: #fff;
+   position: absolute;
+   right: 10px;
+   top: 20px;
+   cursor: pointer;
+}
+ #card .inner .header h1 {
+   color: #fff;
+   margin: 10px 0;
+}
+ #card .inner .header .stars {
+   margin: 0;
+   color: #e94438;
+}
+ #card .inner .content {
+   position: relative;
+   padding: 0 10px;
+   margin-top: 100px;
+}
+ #card .inner .content p {
+   min-width: 90%;
+   font-weight: 300;
+   width: 90%;
+   color: #fff;
+   font-size: 14px;
+   margin: 8px 0;
+}
+ #card .inner .content a {
+   cursor: pointer;
+   color: #e94438;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 12px;
+}
+ #card .inner .btn_row {
+   position: relative;
+   text-align: center;
+   margin-top: 20px;
+}
+ #card .inner .btn_row a {
+   background: #e94438;
+   padding: 10px 50px;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: 700;
+   text-decoration: none;
+   box-shadow: 0 6px 40px rgba(233, 68, 56, .7);
+   cursor: pointer;
+   font-size: 16px;
+   transition: 0.3s ease-in;
+}
+ #card .inner .btn_row a i {
+   color: #fff;
+   font-size: 14px;
+   margin-left: 10px;
+   font-weight: 900;
+}
+ #card .inner .btn_row a:hover {
+   background: #ec5a4f;
+   cursor: pointer;
+}
+ .btn_row_next_prev {
+   display: flex;
+   justify-content: center;
+   margin: 20px auto 100px;
+}
